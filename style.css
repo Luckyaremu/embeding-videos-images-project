@@ -217,3 +217,33 @@ aside article img{
     box-shadow: none;
     border-radius: 5px;
 }
+.comment-display{
+    display: grid;
+    grid: repeat (4, 200px) / 1fr;
+
+}
+.comment-display article{
+    display: grid;
+    grid: 1fr / 56px 1fr 56px;
+    padding: 20px 0;
+}
+#profile{
+    font-size: 40px;
+}
+.comment-display article strong, span{
+    font-size: 13px;
+}
+.comment-display article p{
+    font-size: 14px;
+}
+#onet{
+    padding-right: 20px;
+    color: darkgray;
+}
+.comment-display article button{
+        background: none;
+        color: darkgray;
+        font-weight:  bold;
+        border: none;
+        box-shadow: none;
+}

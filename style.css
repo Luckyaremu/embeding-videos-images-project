@@ -1,3 +1,5 @@
+
+/* body styling */
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -8,16 +10,14 @@ body {
     background-color: #f7f6f2;
 }
 
+/* remove default styling on links */
 a{
     text-decoration: none;
 }
 
+/* header styling */
+
 header{
-    /*display: flex;     
-    align-items: center;     
-    width: 100%;
-    padding: 0px 20px;
-    background-color: white;*/
     display: grid;
     grid: 56px 1fr / 56px 100px 1fr 200px;
     padding: 0px 20px;
@@ -48,10 +48,14 @@ header img{
 }
 
 .searh-bar{
-    display: flex;            
-    align-items: center;
+    display: grid;
+    grid: 1fr / 1fr 30px;
     justify-content: center; 
     margin-top: 15px;
+    padding: 0 150px
+    /*display: flex;            
+    align-items: center;
+    */
 }
 
 .searh-bar form input{
@@ -75,6 +79,9 @@ header nav a {
     padding-right: 15px;
 }
 
+/* End header styling */
+
+/* main page styling */
 main{
 
     display: grid;   
@@ -82,20 +89,17 @@ main{
     padding: 30px 100px;
 }
 
+/* principal video section styling */
 section{
     /* width: 65%; */
     padding: 20px;
 }
 
-aside article{
-    display: flex;
+.video-player{
+    display: grid;
+    grid: 400x 56px 1fr / 1fr;
 }
 
-aside article img{
-    width: 300px;
-    height: 120px;
-    padding: 20px 20px 20px 0px;
-}
 .video-player>div{
     width: 100%;
     display: grid;
@@ -162,13 +166,13 @@ aside article img{
 
 .comment-section{
     display: grid;
-    grid: 300px 1fr / 1fr;
+    grid: 150px 1fr / 1fr;
     padding: 20px 0;
 }
 
 .comment-wrap{
     display: grid;
-    grid: 56px 1fr / 1fr;
+    grid: 56px 100px / 1fr;
 }
 
 .comment-wrap div span{
@@ -240,6 +244,16 @@ aside article img{
     padding-right: 20px;
     color: darkgray;
 }
+
+#more{
+    padding: 15px;
+    color: white;
+}
+
+#more:hover{
+    color: darkgrey;
+}
+
 .comment-display article button{
         background: none;
         color: darkgray;
@@ -247,3 +261,82 @@ aside article img{
         border: none;
         box-shadow: none;
 }
+
+/* making the youtube iframe reponsive */
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* End principal section styling */
+
+/* sidebar styling */
+aside article{
+    display: grid;
+    grid: 1fr / 200px 1fr 56px;
+}
+
+aside article img{
+    width: 190px;
+    height: 120px;
+    padding: 10px 0;
+}
+
+aside div{
+    padding: 10px 0;
+}
+
+aside div label{
+    float: right;
+}
+
+aside div label span{
+    color: darkgrey;
+}
+
+aside div span{
+    font-size: 16px;
+}
+aside article strong{
+    font-size: 14px;
+}
+
+aside article span{
+    font-size: 13px;
+    color: darkgrey;
+}
+
+aside article i{
+    padding: 15px;
+    color: white;
+}
+
+aside article i:hover{
+    color: darkgrey;
+}
+
+/* End sidebar styling */
+
+
+/* media query from ipad screen size to the lowest */
+@media screen and (max-width: 768px) {
+    main{
+        display: grid;   
+        grid: 1fr / 1fr;
+        padding: 30px 20px;
+    }
+
+}
+
+
+

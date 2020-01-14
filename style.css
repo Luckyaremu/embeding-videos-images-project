@@ -44,7 +44,7 @@ header img{
 }
 
 .searh-bar{
-    display: flex;             /* establish flex container */
+    display: flex;            
     align-items: center;
     justify-content: center; 
     margin-top: 15px;
@@ -73,13 +73,14 @@ header nav a {
 
 main{
 
-    display: flex;   
-    padding: 2% 17%;
+    display: grid;   
+    grid: 1fr / 60% 1fr;
+    padding: 30px 100px;
 }
 
 section{
-    width: 70%;
-    padding: 30px;
+    /* width: 65%; */
+    padding: 20px;
 }
 
 aside article{
@@ -87,7 +88,12 @@ aside article{
 }
 
 aside article img{
-    width: 250px;
+    width: 300px;
     height: 120px;
     padding: 20px 20px 20px 0px;
+}
+.video-player div{
+    width: 100%;
+    display: grid;
+    grid: 1fr / 60% repeat(4, 56px) 56px;
 }

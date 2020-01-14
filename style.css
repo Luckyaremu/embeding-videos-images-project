@@ -8,6 +8,10 @@ body {
     background-color: #f7f6f2;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     /*display: flex;     
     align-items: center;     
@@ -92,8 +96,124 @@ aside article img{
     height: 120px;
     padding: 20px 20px 20px 0px;
 }
-.video-player div{
+.video-player>div{
     width: 100%;
     display: grid;
-    grid: 1fr / 60% repeat(4, 56px) 56px;
+    grid: 1fr / 1fr repeat(2, 70px) repeat(2, 90px) 40px;
+    color: rgb(90, 88, 88);
+    border-bottom: 0.5px solid darkgray;
+    /*padding: 20px 0;*/
+}
+
+#like-button{
+    border-bottom: 2px solid rgb(90, 88, 88);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.video-description{
+    display: grid;
+    grid: 60px 1fr / 1fr;
+    padding: 20px 0;
+    border-bottom: 0.5px solid darkgray;
+}
+
+.video-description div{
+    display: grid;
+    grid: 1fr / 60px 1fr 100px;
+}
+
+.profile-letter{
+    background-color: darkgreen;
+    color: white;
+    font-size: 25px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+#author{
+    padding: 10px;
+}
+
+.video-description div button{
+    background-color: rgb(134, 4, 4);
+    color: white;
+    font-weight:  bold;
+    height: 50px !important;
+    border: none;
+    box-shadow: none;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.video-description p{
+    padding-left: 72px;
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(78, 77, 77);
+
+}
+
+.video-description b{
+    padding-left: 50px;
+}
+
+.comment-section{
+    display: grid;
+    grid: 300px 1fr / 1fr;
+    padding: 20px 0;
+}
+
+.comment-wrap{
+    display: grid;
+    grid: 56px 1fr / 1fr;
+}
+
+.comment-wrap div span{
+    padding-right: 20px;
+}
+
+.comment-form{
+    display: grid;
+    grid: 1fr / 56px 1fr;
+}
+
+.comment-form i{
+    font-size: 40px;
+}
+
+.comment-form textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    width: 100%;
+    padding: none;
+}
+.comment-form button{
+    float: right;
+    margin-top: 10px
+}
+
+.comment-form button{
+    float: right;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+
+.comment-form button[type='reset']{
+    background: none;
+    color: black;
+    font-weight:  bold;
+    border: none;
+    box-shadow: none;
+}
+.comment-form button[type='submit']{
+    background-color: darkgrey;
+    color: white;
+    font-weight:  bold;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
 }

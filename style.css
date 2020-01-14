@@ -9,11 +9,16 @@ body {
 }
 
 header{
-    display: flex;             /* establish flex container */
-    align-items: center;       /* center ul container vertically */
+    /*display: flex;     
+    align-items: center;     
     width: 100%;
     padding: 0px 20px;
+    background-color: white;*/
+    display: grid;
+    grid: 56px 1fr / 56px 100px 1fr 200px;
+    padding: 0px 20px;
     background-color: white;
+    align-items: center;
 }
 
 header ul{
@@ -35,14 +40,13 @@ li{
 }
 
 header img{
-    width: 10%;
+    width: 100px;
 }
 
 .searh-bar{
     display: flex;             /* establish flex container */
     align-items: center;
     justify-content: center; 
-    width: 75%;
     margin-top: 15px;
 }
 

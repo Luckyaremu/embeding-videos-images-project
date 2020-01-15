@@ -1,11 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
+        <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-        <title>
-            Embed Youtube Video and image in HTML project
-        </title>
+        <title>Embed Youtube Video and image in HTML project</title>
 
         <link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" type="image/x-icon" >
 
@@ -26,8 +26,8 @@
 
             <img src="images/logo.jpg" alt="Youtube logo">
 
-            <div class="searh-bar">
-                <form>
+            <div>
+                <form class="searh-bar"> 
                     <input type="text" placeholder="Search">
                     <button type="submit">
                         <i class="fas fa-search"></i>
@@ -37,18 +37,20 @@
             
             <!-- Icon menu bar -->
             <nav>
-                <li>
-                    <i class="fas fa-video"></i>
-                </li>
-                <li>
-                    <i class="fas fa-th"></i>
-                </li>
-                <li>
-                    <i class="fas fa-bell"></i>
-                </li>
-                <li>
-                    <i class="fas fa-user-circle"></i>
-                </li>
+                <ul>
+                    <li>
+                        <i class="fas fa-video"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-th"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-bell"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-circle"></i>
+                    </li>
+                </ul>
             </nav>
 
         </header>
@@ -63,18 +65,18 @@
                 <div class="video-player">
 
                     <div class="resp-container">
-                        <iframe class="resp-iframe" width="650" height="400" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="resp-iframe" width="650" height="400" src="https://www.youtube.com/embed/V74l_zS1x8E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <h1>Contributing to the Odin project</h1>
 
                     <div>
                         <span>53 030 Views • 14 Jan. 2020</span>
-                        <span id="like-button">
+                        <span class="like-button">
                             <i class="fas fa-thumbs-up"></i>
                             399
                         </span>
-                        <span id="like-button">
+                        <span class="like-button">
                             <i class="fas fa-thumbs-down"></i>
                             57
                         </span>
@@ -137,67 +139,67 @@
                     </div>
                     <div class="comment-display">
                         <article>
-                            <i id="profile" class="fas fa-user-circle"></i>
+                            <i class="profile" class="fas fa-user-circle"></i>
                             <div>
                                 <strong>UserName</strong> 
                                 <span>2 days ago</span>
                                 <p>This is so beautiful</p>
-                                <span id="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
-                                <span id="onet"><i class="fas fa-thumbs-down"></i></span> 
+                                <span class="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
+                                <span class="onet"><i class="fas fa-thumbs-down"></i></span> 
                                 <button>
                                     REPLY
                                 </button>
 
                             </div>
-                            <i id="more" class="fas fa-ellipsis-v"></i>
+                            <i class="more" class="fas fa-ellipsis-v"></i>
                         </article>
 
                         <article>
-                            <i id="profile" class="fas fa-user-circle"></i>
+                            <i class="profile" class="fas fa-user-circle"></i>
                             <div>
                                 <strong>UserName</strong> 
                                 <span>2 days ago</span>
                                 <p>This is so beautiful</p>
-                                <span id="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
-                                <span id="onet"><i class="fas fa-thumbs-down"></i></span> 
+                                <span class="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
+                                <span class="onet"><i class="fas fa-thumbs-down"></i></span> 
                                 <button>
                                     REPLY
                                 </button>
 
                             </div>
-                            <i id="more" class="fas fa-ellipsis-v"></i>
+                            <i class="more" class="fas fa-ellipsis-v"></i>
                         </article>
 
                         <article>
-                            <i id="profile" class="fas fa-user-circle"></i>
+                            <i class="profile" class="fas fa-user-circle"></i>
                             <div>
                                 <strong>UserName</strong> 
                                 <span>2 days ago</span>
                                 <p>This is so beautiful</p>
-                                <span id="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
-                                <span id="onet"><i class="fas fa-thumbs-down"></i></span> 
+                                <span class="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
+                                <span class="onet"><i class="fas fa-thumbs-down"></i></span> 
                                 <button>
                                     REPLY
                                 </button>
 
                             </div>
-                            <i id="more" class="fas fa-ellipsis-v"></i>
+                            <i class="more" class="fas fa-ellipsis-v"></i>
                         </article>
 
                         <article>
-                            <i id="profile" class="fas fa-user-circle"></i>
+                            <i class="profile" class="fas fa-user-circle"></i>
                             <div>
                                 <strong>UserName</strong> 
                                 <span>2 days ago</span>
                                 <p>This is so beautiful</p>
-                                <span id="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
-                                <span id="onet"><i class="fas fa-thumbs-down"></i></span> 
+                                <span class="onet"><i  class="fas fa-thumbs-up"></i> 10</span>
+                                <span class="onet"><i class="fas fa-thumbs-down"></i></span> 
                                 <button>
                                     REPLY
                                 </button>
 
                             </div>
-                            <i id="more" class="fas fa-ellipsis-v"></i>
+                            <i class="more" class="fas fa-ellipsis-v"></i>
                         </article>
                     </div>
                 </div>

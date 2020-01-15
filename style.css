@@ -31,7 +31,7 @@ header ul{
     justify-content: space-evenly;
 }
 
-ul, li{
+li{
     margin: 0;
     padding: 0;
 }

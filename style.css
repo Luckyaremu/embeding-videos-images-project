@@ -52,18 +52,18 @@ header img{
     grid: 1fr / 1fr 30px;
     justify-content: center; 
     margin-top: 15px;
-    padding: 0 150px
+    padding: 0 150px;
     /*display: flex;            
     align-items: center;
     */
 }
 
-.searh-bar form input{
+.searh-bar input{
     width: 500px;
     padding: 5px;
     font-size: 16px;
 }
-.searh-bar form button{
+.searh-bar button{
     font-size: 14px;
     padding: 7px 30px;
     margin-left: -5px;
@@ -109,7 +109,7 @@ section{
     /*padding: 20px 0;*/
 }
 
-#like-button{
+.like-button{
     border-bottom: 2px solid rgb(90, 88, 88);
     padding-bottom: 20px;
     text-align: center;
@@ -231,7 +231,7 @@ section{
     grid: 1fr / 56px 1fr 56px;
     padding: 20px 0;
 }
-#profile{
+.profile{
     font-size: 40px;
 }
 .comment-display article strong, span{
@@ -240,17 +240,17 @@ section{
 .comment-display article p{
     font-size: 14px;
 }
-#onet{
+.onet{
     padding-right: 20px;
     color: darkgray;
 }
 
-#more{
+.more{
     padding: 15px;
     color: white;
 }
 
-#more:hover{
+.more:hover{
     color: darkgrey;
 }
 

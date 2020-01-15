@@ -51,7 +51,7 @@ header img{
     display: grid;
     grid: 1fr / 1fr 30px;
     justify-content: center; 
-    margin-top: 15px;
+    /* margin-top: 15px; */
     padding: 0 150px;
     /*display: flex;            
     align-items: center;
@@ -59,7 +59,7 @@ header img{
 }
 
 .searh-bar input{
-    width: 500px;
+    width: 650px;
     padding: 5px;
     font-size: 16px;
 }
@@ -226,7 +226,7 @@ section{
     grid: repeat (4, 200px) / 1fr;
 
 }
-.comment-display article{
+.article{
     display: grid;
     grid: 1fr / 56px 1fr 56px;
     padding: 20px 0;
@@ -234,10 +234,10 @@ section{
 .profile{
     font-size: 40px;
 }
-.comment-display article strong, span{
+.article strong, span{
     font-size: 13px;
 }
-.comment-display article p{
+.article p{
     font-size: 14px;
 }
 .onet{
@@ -254,7 +254,7 @@ section{
     color: darkgrey;
 }
 
-.comment-display article button{
+.article button{
         background: none;
         color: darkgray;
         font-weight:  bold;
@@ -277,16 +277,19 @@ section{
     height: 100%;
     border: 0;
 }
-
+.category{
+    font-size: 16px;
+    
+}
 /* End principal section styling */
 
 /* sidebar styling */
-aside article{
+.aside-article{
     display: grid;
     grid: 1fr / 200px 1fr 56px;
 }
 
-aside article img{
+.aside-article img{
     width: 190px;
     height: 120px;
     padding: 10px 0;
@@ -307,21 +310,21 @@ aside div label span{
 aside div span{
     font-size: 16px;
 }
-aside article strong{
+.aside-article strong{
     font-size: 14px;
 }
 
-aside article span{
+.aside-article span{
     font-size: 13px;
     color: darkgrey;
 }
 
-aside article i{
+.aside-article i{
     padding: 15px;
     color: white;
 }
 
-aside article i:hover{
+.aside-article i:hover{
     color: darkgrey;
 }
 
